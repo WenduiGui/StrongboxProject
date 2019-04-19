@@ -10,12 +10,13 @@
 
 <script>
 import fontsizeset from '@/fontsizeset.js'
-// import { spread } from 'q';
+import { spread } from 'q';
 export default {
+    name:"headerbox",
     data(){
         return{
-            url:require("./../../assets/切图/ios/2.jpg"),
-            url1:require("./../../assets/切图/ios/back.png"),
+            url:require("@/assets/切图/ios/2.jpg"),
+            url1:require("@/assets/切图/ios/back.png"),
             url2:require("@/assets/切图/ios/1.jpg"),
             span:"我的",
             spanTwo:"大风起兮",
@@ -65,7 +66,7 @@ export default {
 .headerimg3{
     width: 7.5rem;
     height: 4.35rem;
-    background: url(../../../2.jpg);
+    background: url(../../assets/切图/ios/2.jpg);
 	-webkit-filter: blur(10px);
 	-moz-filter: blur(10px);
 	-o-filter: blur(10px);

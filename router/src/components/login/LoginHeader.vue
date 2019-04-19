@@ -7,6 +7,7 @@
 <script>
 import { fontsizeset } from "@/fontsizeset.js";
 export default {
+  name:"Header",
     data(){
         return{
             url: require("@/assets/切图/ios/tab_safebox_pre@3x.png"),

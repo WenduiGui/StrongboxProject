@@ -1,14 +1,19 @@
 <template>
     <div class="AppFooterbox">
        <div class="AppFooterbox2">
-            <span class="AppFooterspan">{{span}}</span>
+           <router-link to="/SafebL">
+               <span class="AppFooterspan">{{span}}</span>
+           </router-link>
+        <!-- <router-link to="/"></router-link> -->
+           
        </div>
     </div>
 </template>
 
 <script>
-import fontsizeset from '../fontsizeset.js'
+import fontsizeset from '@/fontsizeset.js'
 export default {
+     name:"AppFooterbox",
     data(){
         return{
             span:"退出登录"

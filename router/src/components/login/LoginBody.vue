@@ -14,6 +14,7 @@
 <script>
 import { fontsizeset } from "@/fontsizeset.js";
 export default {
+  name:"Body",
   data() {
     return {
         name:"用户名",

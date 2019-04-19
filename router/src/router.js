@@ -3,9 +3,10 @@ import Router from 'vue-router'
 import Login from './views/Login.vue'
 import RegisteredUsers from './views/RegisteredUsers.vue'
 import Password from './views/Password.vue'
-import MyStrongbox from './views/MyStrongbox.vue'
 import Add from './views/Add.vue'
 import SafeboxHead from './views/SafeboxHead.vue'
+import MyStrongbox from './views/MyStrongbox.vue'
+import Details from './views/Details.vue'
 import Strongbox from './views/Strongbox.vue'
 import Subrouter from './Subrouter.vue'
 import OpeningRecord from './views/OpeningRecord.vue'
@@ -34,11 +35,6 @@ export default new Router({
       component: Password
     },
     {
-      path: '/MyStrongbox',
-      name: 'MyStrongbox',
-      component: MyStrongbox
-    },
-    {
       path: '/Add',
       name: 'Add',
       component: Add
@@ -49,6 +45,21 @@ export default new Router({
       component: SafeboxHead
     },
     {
+      path: '/MyStrongbox',
+      name: 'MyStrongbox',
+      component: MyStrongbox
+    },
+    {
+      path: '/ReturnS',
+      name: 'ReturnS',
+      component: SafeboxHead
+    },
+    {
+      path: '/Returnl',
+      name: 'Returnl',
+      component: Login
+    },
+    {
       path: '/Strongbox',
       name: 'Strongbox',
       component: Strongbox,
@@ -57,8 +68,20 @@ export default new Router({
           path: '/Subrouter',
           name: 'Subrouter',
           component: Subrouter,
-        }
+        },
+        
       ]
+    },
+    {
+      path: '/Details',
+      name: 'Details',
+      component: Details,
+    },
+    // Returnstrong
+    {
+      path: '/Returnstrong',
+      name: 'Returnstrong',
+      component: Strongbox,
     },
     {
       path: '/OpeningRecord',

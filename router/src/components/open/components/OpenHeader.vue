@@ -1,6 +1,8 @@
 <template>
   <div id="Header">
-    <img src="../assets/back.png" alt>
+    <router-link to="/ReturnS">
+      <img src="../assets/back.png" alt>
+    </router-link>
     <p class="word_head">米洛保险箱</p>
   </div>
 </template>

@@ -1,6 +1,8 @@
 <template>
     <div class="box">
-        <img class="img1" :src="url1" alt="">
+        <router-link to="/ReturnS">
+            <img class="img1" :src="url1" alt="">
+        </router-link>
         <span class="span">{{span}}</span>
         <img class="img2" :src="url2" alt="">
     </div>

@@ -1,9 +1,13 @@
 <template>
     <div id="app">
         <div class="box-top">
+            <router-link to="/ReturnS">
                 <img class="pic" :src="imgurl" alt="">
+            </router-link>
                 <span class="font">{{font}}</span>
+            <router-link to="/Details">
                 <img class="pic1" :src="imgurl1" alt="">
+            </router-link>
             </div>
         <div class="header1">
             <div class="word-box">

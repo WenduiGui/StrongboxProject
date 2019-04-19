@@ -17,13 +17,14 @@
     </div>
 </template>
 
-<script>
+<script scoped>
 import fontsizeset from '@/fontsizeset.js'
 import { METHODS } from 'http';
 export default {
+    name:"AppContianerbox",
     data(){
         return{
-            url:require("@/assets/切图/ios/back1.png"),
+            url:require("@/assets/切图/ios/back.png"),
             list:[
                 {num:"通知消息"},
                 {num:"修改密码"},

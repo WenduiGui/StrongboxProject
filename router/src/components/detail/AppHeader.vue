@@ -1,6 +1,9 @@
 <template>
   <div id="header">
-    <a class="tz" href="https:baidu.com">  <img src="..\..\..\切图\ios\back@2x.png" alt=""></a>
+    <img class="tz" :src="url" alt="">
+    <router-link to="/Returnstrong">
+    <img src="@/assets/切图/ios/back@2x.png" alt="">
+    </router-link>
     <h1 class="bxx">{{bxx}}</h1>
   </div>
 </template>
@@ -8,7 +11,8 @@
 export default {
   data(){
     return{
-      bxx:"保险箱详情"
+      bxx:"保险箱详情",
+      url:require("@/assets/切图/ios/back.png"),
     }
   }
 };

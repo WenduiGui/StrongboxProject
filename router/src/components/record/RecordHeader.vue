@@ -1,7 +1,9 @@
 <template>
     <div id="app1">
         <div class="header">
+        <router-link to="/ReturnS">
             <span class="sp1">{{sp1}}</span>
+        </router-link>
             <span class="sp2">{{sp2}}</span>
         </div>
     </div>
